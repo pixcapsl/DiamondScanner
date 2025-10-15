@@ -1,5 +1,7 @@
 package lk.pixcapsoft.diamondscanner;
 
+import net.fabricmc.loader.api.FabricLoader;
+import net.fabricmc.loader.api.EnvType;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
 import net.minecraft.block.Blocks;
