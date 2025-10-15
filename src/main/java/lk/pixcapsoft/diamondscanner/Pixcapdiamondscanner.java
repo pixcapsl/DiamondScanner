@@ -21,8 +21,8 @@ public class Pixcapdiamondscanner implements ModInitializer {
 public void onInitialize() {
     LOGGER.info("Pixcap Diamond Scanner mod loaded!");
     // Only register keybinding on client
-    if (FabricLoader.getInstance().getEnvironmentType() == EnvType.CLIENT) {
-        KeyBindingHandler.register();
-    }
+    //if (FabricLoader.getInstance().getEnvironmentType() == EnvType.CLIENT) {
+        //KeyBindingHandler.register();
+   // }
 }
 }
