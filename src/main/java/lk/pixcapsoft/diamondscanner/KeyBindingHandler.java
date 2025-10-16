@@ -18,7 +18,7 @@ public class KeyBindingHandler {
             "key.pixcapdiamondscanner.scan", // translation key
             InputUtil.Type.KEYSYM,
             GLFW.GLFW_KEY_G, // default key
-            "category.pixcapdiamondscanner" // category in controls menu
+            Text.translatable("category.pixcapdiamondscanner") // Changed to Text.translatable()
         ));
 
         ClientTickEvents.END_CLIENT_TICK.register(client -> {
@@ -56,4 +56,4 @@ public class KeyBindingHandler {
             client.player.sendMessage(Text.literal("Scan complete. Found " + found + " diamond ores."), false);
         }
     }
-}
+        }
