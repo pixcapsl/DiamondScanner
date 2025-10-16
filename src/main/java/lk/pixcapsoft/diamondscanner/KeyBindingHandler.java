@@ -30,6 +30,8 @@ public class KeyBindingHandler {
 
     private static void scanForDiamonds(MinecraftClient client) {
         if (client.player == null || client.world == null) return;
+        
+        client.player.sendMessage(Text.literal("Starting Scanner Engine..."), false);
 
         BlockPos playerPos = client.player.getBlockPos();
         int radius = 32;
